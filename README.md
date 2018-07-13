@@ -1,7 +1,7 @@
 # 파일 설명
-IPCAMtest(video).py - IPWEBCAM의 실시간 화면을 파이선 환경에서 불러오기
-IPCAMtest.py - IPWEBCAM 의 화면 한장을 파이선 환경에서 불러오기
-totaltest.py - IPWEBCAM 의 화면 한장을 CIFAR10 코드를 적용하여 결과 
+    IPCAMtest(video).py - IPWEBCAM의 실시간 화면을 파이선 환경에서 불러오기
+    IPCAMtest.py - IPWEBCAM 의 화면 한장을 파이선 환경에서 불러오기
+    totaltest.py - IPWEBCAM 의 화면 한장을 CIFAR10 코드를 적용하여 결과 
 
 # tensorflow-cifar-10
 Cifar-10 convolutional network implementation example using TensorFlow library.
