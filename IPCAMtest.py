@@ -18,7 +18,9 @@ while(True):
 imgResp = urlopen(url)
 imgNp1=np.array(bytearray(imgResp.read()),dtype=np.uint8)
 img1=cv2.imdecode(imgNp1,-1)
-cv2.imshow('img', img1)    
+cv2.imshow('img', img1)
+
+cv2.waitKey(1)
 
 cv2.imwrite('img.jpg',img1)
 cam.release()
