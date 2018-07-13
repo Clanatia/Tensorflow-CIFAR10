@@ -23,5 +23,4 @@ cv2.imshow('img', img1)
 cv2.waitKey(1)
 
 cv2.imwrite('img.jpg',img1)
-cam.release()
 cv2.destroyAllWindows()
