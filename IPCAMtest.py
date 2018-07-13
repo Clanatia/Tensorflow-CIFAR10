@@ -24,8 +24,7 @@ cam.open('http://192.168.0.5:8080/shot.jpg')
 ret,img = cam.read()
 cv2.imshow('img',img)
     
-if cv2.waitKey(1) & 0xFF == ord('q'):
-    break
+if cv2.waitKey(1
 
 cv2.imwrite(img1,'img.jpg')
 cam.release()
