@@ -7,7 +7,7 @@ import cv2
 import numpy as np
 url = 'http://192.168.0.5:8080/shot.jpg'
 while(True):
-    imgResp =urlib.urlopen(url)
+    imgResp = urlopen(url)
     imgNp1=np.array(bytearray(imgResp.read()),dtype=np.uint8)
     img1=cv2.imdecode(imgNp1,-1)
     cv2.imshow('img', img1)    
@@ -24,7 +24,7 @@ cam.open('http://192.168.0.5:8080/shot.jpg')
 ret,img = cam.read()
 cv2.imshow('img',img)
     
-if cv2.waitKey(1
+cv2.waitKey(1)
 
 cv2.imwrite('img.jpg',img)
 cam.release()
