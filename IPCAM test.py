@@ -13,7 +13,7 @@ while(True):
     cv2.imshow('img', img1)    
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break        
-cv2.imwrite(img1,’img.jpg’)
+cv2.imwrite(img1,'img.jpg')
 cv2.destroyAllWindows()'''
 
 import cv2
@@ -27,6 +27,6 @@ cv2.imshow('img',img)
 if cv2.waitKey(1) & 0xFF == ord('q'):
     break
 
-cv2.imwrite(img1,’img.jpg’)
+cv2.imwrite(img1,'img.jpg')
 cam.release()
 cv2.destroyAllWindows()
