@@ -26,6 +26,6 @@ cv2.imshow('img',img)
     
 if cv2.waitKey(1
 
-cv2.imwrite(img1,'img.jpg')
+cv2.imwrite(img,'img.jpg')
 cam.release()
 cv2.destroyAllWindows()
