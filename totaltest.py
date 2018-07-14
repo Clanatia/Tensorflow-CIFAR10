@@ -51,6 +51,10 @@ def findnum(array):
     return maxnumb
 
 num = findnum(result[0])
-print("%s" % Label[num])
+#print("%s" % Label[num])
+font = cv2.FONT_HERSHEY_SIMPLEX
+cv2.putText(img1,Label[num],(10,10), font, 4,(255,255,255),2,cv2.LINE_AA)
+cv2.imshow('img', img1)   
+
     
 
