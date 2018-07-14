@@ -9,11 +9,9 @@ url = 'http://192.168.0.2:8080/shot.jpg'
 imgResp = urlopen(url)
 imgNp1=np.array(bytearray(imgResp.read()),dtype=np.uint8)
 img1=cv2.imdecode(imgNp1,-1)
-cv2.imshow('img', img1)    
-
-cv2.waitKey(1)
-
-cv2.destroyAllWindows()
+#cv2.imshow('img', img1)    
+#cv2.waitKey(0)
+#cv2.destroyAllWindows()
 
 import tensorflow as tf
 
@@ -53,8 +51,11 @@ def findnum(array):
 num = findnum(result[0])
 #print("%s" % Label[num])
 font = cv2.FONT_HERSHEY_SIMPLEX
-cv2.putText(img1,Label[num],(10,10), font, 4,(255,255,255),2,cv2.LINE_AA)
+cv2.putText(img1,Label[num],(50,50), font, 2,(255,255,255),2,cv2.LINE_AA)
 cv2.imshow('img', img1)   
+cv2.waitKey(0)
+cv2.imwrite("result.jpg",img1)
+cv2.destroyAllWindows()
 
     
 
